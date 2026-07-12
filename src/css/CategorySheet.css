@@ -1,0 +1,37 @@
+
+.mega-menu-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 30px 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    z-index: 999;
+}
+
+.mega-heading {
+    color: #00856f;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.mega-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mega-list li {
+    padding: 6px 0;
+    font-size: 14px;
+    color: #444;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mega-list li:hover {
+    color: #00856f;
+    transform: translateX(5px);
+}

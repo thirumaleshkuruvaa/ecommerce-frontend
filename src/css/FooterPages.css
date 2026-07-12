@@ -1,0 +1,186 @@
+.footer-page-wrapper {
+    background: #f5f7fb;
+    min-height: calc(100vh - 160px);
+    padding: 50px 0;
+}
+
+.footer-page-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 38px 34px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    border: 1px solid #edf1f7;
+}
+
+.footer-page-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 22px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.footer-page-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 72px;
+    height: 4px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
+}
+
+.footer-page-content {
+    color: #374151;
+    font-size: 16px;
+    line-height: 1.85;
+}
+
+.footer-page-content p {
+    margin-bottom: 16px;
+}
+
+.footer-page-content ul {
+    padding-left: 20px;
+    margin-bottom: 18px;
+}
+
+.footer-page-content li {
+    margin-bottom: 10px;
+}
+
+.footer-page-content h5 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.faq-block {
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #eef2f7;
+}
+
+.faq-block:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* =========================
+   404 PAGE
+========================= */
+.notfound-wrapper {
+    min-height: calc(100vh - 160px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #f8fafc 0%, #eef4ff 100%);
+    padding: 40px 0;
+}
+
+.notfound-card {
+    background: #fff;
+    text-align: center;
+    padding: 50px 30px;
+    border-radius: 22px;
+    box-shadow: 0 14px 40px rgba(15, 23, 42, 0.08);
+    border: 1px solid #edf2f7;
+    max-width: 650px;
+    margin: auto;
+}
+
+.notfound-card h1 {
+    font-size: 90px;
+    font-weight: 900;
+    color: #2563eb;
+    margin-bottom: 8px;
+    line-height: 1;
+}
+
+.notfound-card h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.notfound-card p {
+    color: #6b7280;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 992px) {
+    .footer-page-wrapper {
+        padding: 36px 0;
+    }
+
+    .footer-page-card {
+        padding: 30px 24px;
+    }
+
+    .footer-page-title {
+        font-size: 28px;
+    }
+
+    .footer-page-content {
+        font-size: 15px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+    .footer-page-wrapper {
+        padding: 24px 0;
+    }
+
+    .footer-page-card {
+        padding: 24px 18px;
+        border-radius: 14px;
+    }
+
+    .footer-page-title {
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+
+    .footer-page-title::after {
+        width: 58px;
+        height: 3px;
+    }
+
+    .footer-page-content {
+        font-size: 14.5px;
+        line-height: 1.75;
+    }
+
+    .footer-page-content h5 {
+        font-size: 16px;
+    }
+
+    .notfound-card {
+        padding: 36px 20px;
+        border-radius: 16px;
+    }
+
+    .notfound-card h1 {
+        font-size: 68px;
+    }
+
+    .notfound-card h3 {
+        font-size: 24px;
+    }
+
+    .notfound-card p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,403 @@
+/* ===========================
+   SELLER AUTH PAGE
+=========================== */
+.seller-auth-page {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #fff8f2 0%, #ffffff 40%, #fff8f2 100%);
+    padding: 40px 0;
+}
+
+.seller-left-panel {
+    padding: 20px 10px;
+}
+
+.seller-badge {
+    display: inline-flex;
+    align-items: center;
+    background: #fff3e8;
+    color: #ff7a00;
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 18px;
+    border: 1px solid #ffe1c2;
+}
+
+.seller-left-panel h1 {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #121212;
+    margin-bottom: 18px;
+}
+
+.seller-left-panel h1 span {
+    color: #ff7a00;
+}
+
+.seller-left-panel>p {
+    font-size: 17px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.seller-feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.seller-feature-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 18px;
+    padding: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.seller-feature-item svg {
+    color: #ff7a00;
+    font-size: 22px;
+    margin-top: 3px;
+}
+
+.seller-feature-item h6 {
+    margin: 0;
+    font-weight: 700;
+    color: #111;
+}
+
+.seller-feature-item p {
+    margin: 4px 0 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.seller-auth-illustration {
+    margin-top: 28px;
+}
+
+.seller-auth-illustration img {
+    width: 100%;
+    max-width: 430px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 24px;
+}
+
+/* ===========================
+   RIGHT PANEL / FORM CARD
+=========================== */
+.seller-right-panel {
+    display: flex;
+    justify-content: center;
+}
+
+.seller-form-card,
+.seller-welcome-card {
+    width: 100%;
+    max-width: 760px;
+    background: #fff;
+    border-radius: 28px;
+    padding: 28px;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+.seller-form-top {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.seller-form-top h3 {
+    font-size: 34px;
+    font-weight: 900;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.seller-form-top p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.seller-step-header {
+    margin-bottom: 20px;
+}
+
+.seller-step-header h4 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 6px;
+    color: #111;
+}
+
+.seller-step-header p {
+    margin: 0;
+    color: #666;
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+.seller-input-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #e7e7e7;
+    border-radius: 14px;
+    padding: 0 14px;
+    background: #fff;
+    transition: 0.25s ease;
+}
+
+.seller-input-group:focus-within {
+    border-color: #ff7a00;
+    box-shadow: 0 0 0 4px rgba(255, 122, 0, 0.12);
+}
+
+.seller-input-group svg {
+    color: #8a8a8a;
+    font-size: 16px;
+}
+
+.seller-input-group .form-control {
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    padding: 14px 0;
+    font-size: 15px;
+}
+
+.form-control {
+    border-radius: 14px;
+    min-height: 50px;
+}
+
+.form-label {
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+/* ===========================
+   STEPS PROGRESS
+=========================== */
+.seller-steps-progress {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.seller-step-pill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f8f8f8;
+    border: 1px solid #ececec;
+    border-radius: 999px;
+    padding: 10px 14px;
+    font-weight: 700;
+    color: #777;
+    transition: 0.25s ease;
+}
+
+.seller-step-pill.active {
+    background: #fff3e8;
+    color: #ff7a00;
+    border-color: #ffd0a2;
+}
+
+.seller-step-pill.completed {
+    background: #eefaf4;
+    color: #149954;
+    border-color: #ccefdc;
+}
+
+.step-number {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #fff;
+    font-size: 13px;
+    border: 1px solid #eee;
+}
+
+.step-label {
+    font-size: 14px;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+.seller-step-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    margin-top: 28px;
+}
+
+.seller-btn-primary {
+    background: linear-gradient(90deg, #ff7a00, #ff9b3d);
+    border: none;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 14px;
+    padding: 13px 22px;
+    min-height: 50px;
+    box-shadow: 0 10px 25px rgba(255, 122, 0, 0.25);
+}
+
+.seller-btn-primary:hover {
+    background: linear-gradient(90deg, #f06f00, #ff9228);
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.seller-btn-outline {
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    color: #333;
+    font-weight: 700;
+    border-radius: 14px;
+    padding: 13px 22px;
+    min-height: 50px;
+}
+
+.seller-btn-outline:hover {
+    background: #fafafa;
+    color: #111;
+}
+
+.seller-link-btn {
+    border: none;
+    background: transparent;
+    color: #ff7a00;
+    font-weight: 800;
+    padding: 0;
+    text-decoration: none;
+}
+
+.seller-link-btn:hover {
+    color: #e86c00;
+}
+
+/* ===========================
+   OTP BOXES
+=========================== */
+.seller-otp-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.seller-otp-box {
+    width: 54px;
+    height: 58px;
+    border-radius: 14px;
+    border: 1.5px solid #e3e3e3;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+    outline: none;
+    transition: 0.25s ease;
+}
+
+.seller-otp-box:focus {
+    border-color: #ff7a00;
+    box-shadow: 0 0 0 4px rgba(255, 122, 0, 0.12);
+}
+
+.seller-otp-error {
+    border-color: #dc3545 !important;
+}
+
+/* ===========================
+   WELCOME CARD
+=========================== */
+.seller-welcome-card {
+    text-align: center;
+    padding: 60px 30px;
+}
+
+.seller-welcome-card h2 {
+    font-size: 34px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.seller-welcome-card p {
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 26px;
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+@media (max-width: 991px) {
+    .seller-left-panel {
+        text-align: center;
+    }
+
+    .seller-left-panel h1 {
+        font-size: 34px;
+    }
+
+    .seller-feature-item {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .seller-auth-page {
+        padding: 20px 0 40px;
+    }
+
+    .seller-form-card,
+    .seller-welcome-card {
+        padding: 20px;
+        border-radius: 22px;
+    }
+
+    .seller-form-top h3 {
+        font-size: 28px;
+    }
+
+    .seller-left-panel h1 {
+        font-size: 28px;
+    }
+
+    .seller-left-panel>p {
+        font-size: 15px;
+    }
+
+    .seller-step-footer {
+        flex-direction: column;
+    }
+
+    .seller-step-pill {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .seller-otp-wrapper {
+        gap: 8px;
+    }
+
+    .seller-otp-box {
+        width: 44px;
+        height: 50px;
+        font-size: 18px;
+    }
+}

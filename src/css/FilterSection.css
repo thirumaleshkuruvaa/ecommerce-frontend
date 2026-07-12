@@ -1,0 +1,185 @@
+/* ===========================
+   FILTER SIDEBAR
+=========================== */
+
+.filter-container {
+    background: #fff;
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .08);
+    position: sticky;
+    top: 90px;
+    max-height: calc(100vh - 110px);
+    overflow-y: auto;
+}
+
+/* Scrollbar */
+
+.filter-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.filter-container::-webkit-scrollbar-thumb {
+    background: #cfcfcf;
+    border-radius: 20px;
+}
+
+.filter-container::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.filter-header h4 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
+}
+
+.clear-btn {
+    border: none;
+    background: #111827;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.clear-btn:hover {
+    background: #00856f;
+}
+
+/* ===========================
+   FILTER BOX
+=========================== */
+
+.filter-box {
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 22px;
+    padding-bottom: 20px;
+}
+
+.filter-box:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.filter-box h5 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1f2937;
+}
+
+/* ===========================
+   LABELS
+=========================== */
+
+.filter-box label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin-bottom: 12px;
+    color: #555;
+    font-size: 14px;
+    transition: .2s;
+}
+
+.filter-box label:hover {
+    color: #00856f;
+}
+
+.filter-box input[type="checkbox"],
+.filter-box input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #00856f;
+}
+
+/* ===========================
+   COLOR
+=========================== */
+
+.color-label {
+    display: flex;
+    align-items: center;
+}
+
+.color-circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid #cfcfcf;
+    flex-shrink: 0;
+}
+
+/* ===========================
+   SHOW MORE BUTTON
+=========================== */
+
+.show-more-btn {
+    border: none;
+    background: transparent;
+    color: #0d6efd;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 8px;
+    transition: .2s;
+}
+
+.show-more-btn:hover {
+    color: #084298;
+    text-decoration: underline;
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:992px) {
+
+    .filter-container {
+        position: static;
+        max-height: none;
+        padding: 18px;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .filter-header h4 {
+        font-size: 20px;
+    }
+
+    .filter-box h5 {
+        font-size: 16px;
+    }
+
+    .filter-box label {
+        font-size: 13px;
+    }
+
+    .clear-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+}

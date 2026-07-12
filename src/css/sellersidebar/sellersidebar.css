@@ -1,0 +1,235 @@
+/* =========================
+   SELLER DASHBOARD LAYOUT
+========================= */
+.seller-dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+.seller-dashboard-main {
+    flex: 1;
+    min-width: 0;
+    padding: 24px;
+    background: #f8fafc;
+}
+
+/* =========================
+   SELLER SIDEBAR
+========================= */
+.seller-sidebar {
+    width: 270px;
+    min-width: 270px;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 4px 0 18px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+/* =========================
+   SIDEBAR HEADER
+========================= */
+.seller-sidebar-header {
+    padding: 22px 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.seller-sidebar-header h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+
+/* =========================
+   MENU SECTION
+========================= */
+.seller-sidebar-menu {
+    flex: 1;
+    padding: 16px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.seller-sidebar-bottom {
+    padding: 14px 12px 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* =========================
+   SIDEBAR LINKS
+========================= */
+.seller-sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    text-decoration: none;
+    color: #e2e8f0;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 13px 16px;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.28s ease;
+    cursor: pointer;
+    text-align: left;
+}
+
+.seller-sidebar-link i {
+    font-size: 18px;
+    min-width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seller-sidebar-link span {
+    flex: 1;
+    white-space: nowrap;
+}
+
+.seller-sidebar-link:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    transform: translateX(3px);
+}
+
+/* ACTIVE LINK */
+.seller-active-link {
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
+    color: #fff !important;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.28);
+}
+
+.seller-active-link:hover {
+    transform: none;
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
+}
+
+/* LOGOUT */
+.seller-logout-btn {
+    color: #fecaca;
+}
+
+.seller-logout-btn:hover {
+    background: rgba(239, 68, 68, 0.14);
+    color: #fff;
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 992px) {
+    .seller-sidebar {
+        width: 230px;
+        min-width: 230px;
+    }
+
+    .seller-sidebar-header {
+        padding: 18px 14px;
+    }
+
+    .seller-sidebar-header h4 {
+        font-size: 20px;
+    }
+
+    .seller-sidebar-link {
+        padding: 12px 14px;
+        font-size: 14px;
+        border-radius: 12px;
+    }
+
+    .seller-sidebar-link i {
+        font-size: 17px;
+    }
+
+    .seller-dashboard-main {
+        padding: 18px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+    .seller-dashboard-layout {
+        flex-direction: column;
+    }
+
+    .seller-sidebar {
+        width: 100%;
+        min-width: 100%;
+        min-height: auto;
+        position: relative;
+        top: unset;
+        left: unset;
+        box-shadow: none;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+
+    .seller-sidebar-header {
+        padding: 16px;
+    }
+
+    .seller-sidebar-header h4 {
+        font-size: 18px;
+    }
+
+    .seller-sidebar-menu {
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .seller-sidebar-link {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .seller-sidebar-bottom {
+        padding: 12px;
+    }
+
+    .seller-dashboard-main {
+        padding: 14px;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media (max-width: 576px) {
+    .seller-sidebar-header h4 {
+        font-size: 17px;
+    }
+
+    .seller-sidebar-link {
+        font-size: 13.5px;
+        padding: 11px 12px;
+        gap: 10px;
+    }
+
+    .seller-sidebar-link i {
+        font-size: 16px;
+        min-width: 18px;
+    }
+
+    .seller-dashboard-main {
+        padding: 12px;
+    }
+}

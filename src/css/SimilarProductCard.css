@@ -1,0 +1,94 @@
+/* =========================
+   SIMILAR PRODUCTS SECTION
+========================= */
+.similar-products-section {
+    margin-top: 50px;
+    padding: 10px 0 30px;
+}
+
+.similar-header {
+    margin-bottom: 24px;
+}
+
+.similar-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #111827;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.similar-title i {
+    color: #ff7a00;
+}
+
+.similar-subtitle {
+    margin: 0;
+    color: #6b7280;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.similar-products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.similar-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 140px;
+}
+
+.similar-empty {
+    text-align: center;
+    padding: 30px 16px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    color: #6b7280;
+    font-weight: 600;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1199px) {
+    .similar-products-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 991px) {
+    .similar-title {
+        font-size: 24px;
+    }
+
+    .similar-products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .similar-products-section {
+        margin-top: 35px;
+        padding-bottom: 20px;
+    }
+
+    .similar-title {
+        font-size: 20px;
+    }
+
+    .similar-subtitle {
+        font-size: 13px;
+    }
+
+    .similar-products-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}

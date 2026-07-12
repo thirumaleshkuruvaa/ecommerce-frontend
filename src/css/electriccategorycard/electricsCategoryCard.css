@@ -1,0 +1,121 @@
+.electric-wrapper {
+    background: #ffffff;
+    margin: 20px 16px;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+}
+
+.section-header {
+    margin-bottom: 18px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+}
+
+.electric-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+.electric-card {
+    background: #f9fafb;
+    border: 1px solid #edf1f5;
+    border-radius: 14px;
+    padding: 16px 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.electric-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.10);
+}
+
+.electric-image-box {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.electric-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.electric-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.empty-box {
+    text-align: center;
+    color: #6b7280;
+    padding: 30px 0;
+    font-size: 15px;
+}
+
+@media (max-width: 1199px) {
+    .electric-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+    .electric-wrapper {
+        margin: 16px 12px;
+        padding: 16px;
+    }
+
+    .electric-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .section-title {
+        font-size: 1.35rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .electric-wrapper {
+        margin: 14px 10px;
+        padding: 14px;
+        border-radius: 12px;
+    }
+
+    .electric-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .electric-card {
+        padding: 12px 10px;
+        border-radius: 12px;
+    }
+
+    .electric-image-box {
+        height: 85px;
+    }
+
+    .electric-name {
+        font-size: 13px;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+    }
+}

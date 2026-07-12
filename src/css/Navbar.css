@@ -1,0 +1,460 @@
+
+   /* NAVBAR WRAPPER */
+
+.glomo-navbar {
+    z-index: 1030;
+    min-height: 78px;
+    background: #ffffff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.glomo-navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    position: relative;
+    min-height: 78px;
+}
+
+
+   /* LEFT SECTION = LOGO + CATEGORY */
+
+.glomo-left-section {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    /* logo close to categories */
+    flex: 0 0 auto;
+    min-width: 0;
+}
+
+/* =========================
+   LOGO
+========================= */
+.glomo-logo-wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-right: 4px;
+  
+}
+
+.glomo-logo {
+    height: 68px;
+
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* =========================
+   CATEGORY COLLAPSE
+========================= */
+.glomo-category-collapse {
+    flex-grow: 0 !important;
+}
+
+/* =========================
+   CATEGORY LINKS
+========================= */
+.navbar-category-list {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin: 0;
+    padding: 0;
+}
+
+.category-link {
+    cursor: pointer;
+    font-weight: 600;
+    color: #212529 !important;
+    transition: 0.25s ease;
+    padding: 8px 10px !important;
+    position: relative;
+    white-space: nowrap;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.category-link:hover {
+    color: #0d6efd !important;
+    background: rgba(13, 110, 253, 0.04);
+}
+
+/* underline hover */
+.category-link::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: 4px;
+    width: 0;
+    height: 2px;
+    background: #0d6efd;
+    transition: width 0.25s ease;
+    border-radius: 2px;
+}
+
+.category-link:hover::after {
+    width: calc(100% - 20px);
+}
+
+/* =========================
+   RIGHT SECTION
+========================= */
+.navbar-right-section {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    gap: 14px;
+}
+
+
+   /* SEARCH */
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 420px;
+    max-width: 100%;
+    height: 44px;
+    border: 1px solid #dcdcdc;
+    border-radius: 50px;
+    overflow: hidden;
+    background: #f8f9fa;
+}
+
+.search-input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 18px;
+    font-size: 14px;
+    color: #212529;
+}
+
+.search-input::placeholder {
+    color: #8b8b8b;
+}
+
+.search-btn {
+    width: 55px;
+    height: 100%;
+    border: none;
+    background: #0d6efd;
+    color: white;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.search-btn:hover {
+    background: #0b5ed7;
+}
+
+
+   /* ICONS */
+.nav-icon-btn {
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    transition: 0.3s;
+    color: #212529;
+    padding: 0;
+}
+
+.nav-icon-btn:hover {
+    color: #0d6efd;
+    transform: scale(1.06);
+}
+
+.nav-icon-link {
+    color: #212529;
+    font-size: 22px;
+    text-decoration: none;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-icon-link:hover {
+    color: #0d6efd;
+    transform: scale(1.06);
+}
+
+
+   /* USER */
+
+.user-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    background: transparent;
+    padding: 4px 8px;
+}
+
+.user-btn:hover {
+    background: #f8f9fa;
+}
+
+.user-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #e5e5e5;
+}
+
+.user-name {
+    font-weight: 500;
+    color: #212529;
+    white-space: nowrap;
+}
+
+
+   /* CART BADGE */
+
+.cart-badge {
+    position: absolute;
+    top: -4px;
+    right: -8px;
+    background: #dc3545;
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+
+   /* BUTTONS */
+
+.seller-btn,
+.login-btn {
+    white-space: nowrap;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+
+   /* CATEGORY SHEET */
+
+.category-sheet {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 999;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+   /* DROPDOWN */
+
+.dropdown-menu {
+    min-width: 230px;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 0;
+}
+
+.dropdown-item {
+    padding: 10px 16px;
+    font-size: 14px;
+}
+
+/* =========================
+   1400px
+========================= */
+@media (max-width: 1400px) {
+    .glomo-logo {
+        height: 62px;
+    }
+
+    .search-box {
+        width: 360px;
+    }
+
+    .category-link {
+        padding: 8px 8px !important;
+        font-size: 15px;
+    }
+}
+
+/* =========================
+   1200px
+========================= */
+@media (max-width: 1200px) {
+    .glomo-logo {
+        height: 58px;
+    }
+
+    .search-box {
+        width: 300px;
+    }
+
+    .category-link {
+        padding: 8px 7px !important;
+        font-size: 14px;
+    }
+
+    .user-name {
+        max-width: 110px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/* =========================
+   TABLET / MOBILE NAV
+========================= */
+@media (max-width: 992px) {
+    .glomo-navbar {
+        min-height: auto;
+    }
+
+    .glomo-navbar-container {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        min-height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .glomo-left-section {
+        width: 100%;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .glomo-logo-wrapper {
+        margin-right: 0;
+    }
+
+    .glomo-logo {
+        height: 52px;
+    }
+
+    .glomo-category-collapse {
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .navbar-collapse {
+        padding-top: 14px;
+        width: 100%;
+    }
+
+    .navbar-category-list {
+        margin-bottom: 14px;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .category-link {
+        width: 100%;
+        padding: 10px 0 !important;
+        font-size: 15px;
+    }
+
+    .category-link::after {
+        display: none;
+    }
+
+    .navbar-right-section {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 12px !important;
+        align-items: stretch !important;
+        margin-left: 0;
+    }
+
+    .search-box {
+        width: 100%;
+        order: 1;
+    }
+
+    .dropdown {
+        width: 100%;
+        order: 2;
+    }
+
+    .login-btn,
+    .seller-btn {
+        width: 100%;
+        order: 3;
+    }
+
+    .user-btn {
+        width: 100%;
+        justify-content: center;
+        border: 1px solid #e9ecef;
+        border-radius: 10px;
+        padding: 10px 12px;
+    }
+
+    .category-sheet {
+        display: none;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media (max-width: 576px) {
+    .glomo-navbar-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .glomo-logo {
+        height: 44px;
+    }
+
+    .search-box {
+        height: 42px;
+    }
+
+    .search-input {
+        font-size: 13px;
+        padding: 0 14px;
+    }
+
+    .search-btn {
+        width: 48px;
+    }
+
+    .nav-icon-link,
+    .nav-icon-btn {
+        font-size: 20px;
+    }
+
+    .user-avatar {
+        width: 34px;
+        height: 34px;
+    }
+
+    .cart-badge {
+        width: 16px;
+        height: 16px;
+        font-size: 9px;
+    }
+
+    .category-link {
+        font-size: 14px;
+    }
+}

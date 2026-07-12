@@ -1,0 +1,394 @@
+
+
+/* =========================
+   HOME CAROUSEL WRAPPER
+========================= */
+.home-carousel-section {
+    width: 100%;
+    margin-top: 12px;
+    /* gap below navbar */
+    margin-bottom: 22px;
+    padding: 0 12px;
+}
+
+.home-carousel {
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+    background: #fff;
+}
+
+/* =========================
+   EACH SLIDE BACKGROUND
+========================= */
+.carousel-custom-bg {
+    min-height: 460px;
+    display: flex;
+    align-items: center;
+    padding: 36px 64px;
+    position: relative;
+}
+
+.carousel-inner-container {
+    width: 100%;
+}
+
+/* Slide Colors */
+.slide-bg-1 {
+    background: linear-gradient(135deg, #f9dbe8 0%, #fceef5 100%);
+}
+
+.slide-bg-2 {
+    background: linear-gradient(135deg, #dff5ec 0%, #f0fbf6 100%);
+}
+
+.slide-bg-3 {
+    background: linear-gradient(135deg, #e5ebff 0%, #f3f6ff 100%);
+}
+
+.slide-bg-4 {
+    background: linear-gradient(135deg, #fff1d8 0%, #fff8ec 100%);
+}
+
+.slide-bg-5 {
+    background: linear-gradient(135deg, #ffe0ea 0%, #fff2f7 100%);
+}
+
+.slide-bg-6 {
+    background: linear-gradient(135deg, #efe7ff 0%, #f8f4ff 100%);
+}
+
+/* =========================
+   TEXT SECTION
+========================= */
+.text-section {
+    padding-left: 24px;
+    max-width: 560px;
+}
+
+.small-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
+}
+
+.main-title {
+    font-size: 58px;
+    font-weight: 900;
+    color: #111;
+    line-height: 1.05;
+    margin-bottom: 14px;
+}
+
+.brands-section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 28px;
+}
+
+.divider {
+    color: #6b7280;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.offer-btn {
+    border: none;
+    background: #111827;
+    color: #fff;
+    padding: 13px 28px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 18px rgba(17, 24, 39, 0.18);
+}
+
+.offer-btn:hover {
+    background: #000;
+    transform: translateY(-1px);
+}
+
+/* =========================
+   IMAGE SECTION
+========================= */
+.carousel-image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 360px;
+}
+
+.carousel-product-img {
+    max-height: 340px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 14px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   ARROWS
+========================= */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 6%;
+}
+
+.custom-arrow {
+    filter: invert(100%);
+    width: 2.2rem;
+    height: 2.2rem;
+    background-size: 100% 100%;
+}
+
+/* =========================
+   INDICATORS
+========================= */
+.carousel-indicators {
+    margin-bottom: 16px;
+}
+
+.carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    border: none !important;
+    margin: 0 5px !important;
+    background-color: rgba(0, 0, 0, 0.35) !important;
+}
+
+.carousel-indicators .active {
+    background-color: #111 !important;
+    transform: scale(1.15);
+}
+
+/* =========================
+   LARGE DESKTOP
+========================= */
+@media (max-width: 1400px) {
+    .carousel-custom-bg {
+        min-height: 430px;
+        padding: 32px 50px;
+    }
+
+    .main-title {
+        font-size: 52px;
+    }
+
+    .carousel-product-img {
+        max-height: 320px;
+    }
+}
+
+/* =========================
+   LAPTOP / SMALL DESKTOP
+========================= */
+@media (max-width: 1200px) {
+    .home-carousel-section {
+        margin-top: 10px;
+        padding: 0 10px;
+    }
+
+    .carousel-custom-bg {
+        min-height: 410px;
+        padding: 28px 36px;
+    }
+
+    .text-section {
+        padding-left: 10px;
+    }
+
+    .small-title {
+        font-size: 22px;
+    }
+
+    .main-title {
+        font-size: 44px;
+    }
+
+    .brands-section {
+        font-size: 15px;
+        gap: 10px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .carousel-product-img {
+        max-height: 280px;
+    }
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 991px) {
+    .home-carousel-section {
+        margin-top: 8px;
+        padding: 0 8px;
+    }
+
+    .carousel-custom-bg {
+        min-height: 380px;
+        padding: 24px 24px;
+    }
+
+    .text-section {
+        padding-left: 0;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .small-title {
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+
+    .main-title {
+        font-size: 38px;
+        margin-bottom: 10px;
+    }
+
+    .brands-section {
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .carousel-image-wrapper {
+        min-height: 220px;
+    }
+
+    .carousel-product-img {
+        max-height: 220px;
+        margin-top: 8px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 9%;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 767px) {
+    .home-carousel-section {
+        margin-top: 6px;
+        margin-bottom: 16px;
+        padding: 0 6px;
+    }
+
+    .home-carousel {
+        border-radius: 14px;
+    }
+
+    .carousel-custom-bg {
+        min-height: 500px;
+        padding: 22px 16px 28px;
+        text-align: center;
+    }
+
+    .text-section {
+        padding-left: 0;
+    }
+
+    .small-title {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
+    .main-title {
+        font-size: 32px;
+        line-height: 1.15;
+        margin-bottom: 10px;
+    }
+
+    .brands-section {
+        justify-content: center;
+        gap: 8px;
+        font-size: 12px;
+        margin-bottom: 18px;
+    }
+
+    .offer-btn {
+        padding: 11px 22px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+
+    .carousel-image-wrapper {
+        min-height: auto;
+    }
+
+    .carousel-product-img {
+        max-height: 190px;
+        width: auto;
+        margin-top: 10px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 12%;
+    }
+
+    .custom-arrow {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 10px;
+    }
+
+    .carousel-indicators button {
+        width: 8px !important;
+        height: 8px !important;
+        margin: 0 4px !important;
+    }
+}
+
+/* =========================
+   VERY SMALL MOBILE
+========================= */
+@media (max-width: 480px) {
+    .carousel-custom-bg {
+        min-height: 470px;
+        padding: 18px 14px 24px;
+    }
+
+    .small-title {
+        font-size: 16px;
+    }
+
+    .main-title {
+        font-size: 28px;
+    }
+
+    .brands-section {
+        font-size: 11px;
+        gap: 6px;
+    }
+
+    .offer-btn {
+        font-size: 13px;
+        padding: 10px 18px;
+    }
+
+    .carousel-product-img {
+        max-height: 170px;
+    }
+}
+

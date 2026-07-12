@@ -1,0 +1,28 @@
+.address-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.address-card:hover {
+    transform: translateY(-3px);
+}
+
+.address-card .card-body {
+    padding: 1.25rem;
+}
+
+.address-card h5 {
+    font-size: 1rem;
+}
+
+.address-card p {
+    font-size: 0.9rem;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.btn {
+    border-radius: 10px;
+}

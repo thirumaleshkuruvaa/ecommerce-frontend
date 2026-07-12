@@ -1,0 +1,106 @@
+.shop-wrapper {
+    background: #ffffff;
+    margin: 20px 16px;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+}
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+}
+
+.shop-card {
+    background: #fff;
+    border: 1px solid #edf1f5;
+    border-radius: 14px;
+    padding: 14px 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.shop-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.10);
+}
+
+.shop-image-box {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.shop-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.shop-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111827;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.empty-box {
+    text-align: center;
+    color: #6b7280;
+    padding: 30px 0;
+    font-size: 15px;
+}
+
+@media (max-width: 1199px) {
+    .shop-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+    .shop-wrapper {
+        margin: 16px 12px;
+        padding: 16px;
+    }
+
+    .shop-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .shop-image-box {
+        height: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .shop-wrapper {
+        margin: 14px 10px;
+        padding: 14px;
+        border-radius: 12px;
+    }
+
+    .shop-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .shop-card {
+        padding: 12px 10px;
+        border-radius: 12px;
+    }
+
+    .shop-image-box {
+        height: 90px;
+    }
+
+    .shop-name {
+        font-size: 13px;
+    }
+}

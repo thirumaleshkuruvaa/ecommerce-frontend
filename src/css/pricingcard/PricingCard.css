@@ -1,0 +1,239 @@
+.pricing-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 90px;
+    border: 1px solid #f1f1f1;
+}
+
+/* ================= TITLE ================= */
+.pricing-title {
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #212529;
+}
+
+/* ================= PRICE ROWS ================= */
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 15px;
+    color: #444;
+}
+
+.total-row {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111;
+}
+
+/* ================= COUPON TEXT ================= */
+.coupon-status {
+    font-size: 13px;
+    font-weight: 500;
+    color: #198754;
+    margin-top: 8px;
+}
+
+/* ================= PAYMENT SECTION ================= */
+.payment-method-section {
+    margin-top: 24px;
+}
+
+.payment-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: #212529;
+    display: flex;
+    align-items: center;
+}
+
+/* each payment card */
+.payment-option {
+    display: block;
+    width: 100%;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    background: #fff;
+    transition: all 0.25s ease;
+}
+
+.payment-option:hover {
+    border-color: #198754;
+    box-shadow: 0 6px 14px rgba(25, 135, 84, 0.08);
+    transform: translateY(-1px);
+}
+
+/* selected payment box */
+.payment-option.active-payment {
+    border-color: #198754;
+    background: #f5fff8;
+    box-shadow: 0 8px 18px rgba(25, 135, 84, 0.12);
+}
+
+/* inside payment card */
+.payment-option .payment-content {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* radio */
+.payment-option input[type="radio"] {
+    transform: scale(1.15);
+    cursor: pointer;
+    accent-color: #198754;
+}
+
+/* logo */
+.payment-logo {
+    width: 70px;
+    height: 28px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 6px;
+    padding: 2px;
+}
+
+/* payment text */
+.payment-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 2px;
+}
+
+.payment-desc {
+    font-size: 12px;
+    color: #6c757d;
+    margin: 0;
+}
+
+/* ================= BUTTON ================= */
+.checkout-btn {
+    width: 100%;
+    border: none;
+    background: #198754;
+    color: white;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 15px;
+    transition: all 0.25s ease;
+}
+
+.checkout-btn:hover {
+    background: #157347;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(25, 135, 84, 0.2);
+}
+
+.checkout-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* ================= DIVIDER ================= */
+.pricing-card hr {
+    margin: 18px 0;
+    opacity: 0.15;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* tablet */
+@media (max-width: 991px) {
+    .pricing-card {
+        position: static;
+        top: unset;
+        margin-top: 20px;
+    }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+    .pricing-card {
+        padding: 18px;
+        border-radius: 14px;
+    }
+
+    .pricing-title {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .price-row {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+
+    .total-row {
+        font-size: 18px;
+    }
+
+    .payment-title {
+        font-size: 16px;
+    }
+
+    .payment-option {
+        padding: 12px 14px;
+    }
+
+    .payment-logo {
+        width: 60px;
+        height: 24px;
+    }
+
+    .payment-name {
+        font-size: 14px;
+    }
+
+    .payment-desc {
+        font-size: 11px;
+    }
+
+    .checkout-btn {
+        padding: 13px;
+        font-size: 14px;
+    }
+}
+
+/* very small phones */
+@media (max-width: 480px) {
+    .pricing-card {
+        padding: 16px;
+    }
+
+    .payment-option .payment-content {
+        gap: 10px;
+    }
+
+    .payment-logo {
+        width: 55px;
+        height: 22px;
+    }
+
+    .pricing-title {
+        font-size: 18px;
+    }
+
+    .payment-title {
+        font-size: 15px;
+    }
+
+    .checkout-btn {
+        font-size: 14px;
+    }
+}

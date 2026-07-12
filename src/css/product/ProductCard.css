@@ -1,0 +1,162 @@
+/* PRODUCT CARD */
+
+.product-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    cursor: pointer;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+/* IMAGE */
+
+.product-image-container {
+    position: relative;
+}
+
+.product-image {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    background: #fff;
+    transition: 0.4s;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.05);
+}
+
+/* DISCOUNT */
+
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #00856f;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* CONTENT */
+
+.product-content {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-brand {
+    color: #888;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.product-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #222;
+    line-height: 1.3;
+    margin-bottom: 4px;
+}
+
+
+.product-description {
+    color: #666;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+/* PRICE */
+
+.price-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: 800;
+    color: #000;
+}
+
+.old-price {
+    font-size: 13px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+/* BUTTON */
+
+.add-cart-btn {
+    width: 100%;
+    border: none;
+    background: #00856f;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 700;
+    margin-top: auto;
+    transition: 0.3s;
+}
+
+.add-cart-btn:hover {
+    background: #006d5a;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .product-image {
+        height: 180px;
+    }
+
+    .product-content {
+        padding: 12px;
+    }
+
+    .product-brand {
+        font-size: 11px;
+    }
+
+    .product-title {
+        font-size: 14px;
+    }
+
+    .product-description {
+        font-size: 12px;
+    }
+
+    .product-price {
+        font-size: 16px;
+    }
+
+    .old-price {
+        font-size: 12px;
+    }
+
+    .add-cart-btn {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
