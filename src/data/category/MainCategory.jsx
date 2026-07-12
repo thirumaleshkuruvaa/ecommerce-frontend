@@ -1,7 +1,7 @@
-import { menLevelTwo } from "./levelTwo/menLevelTwo";
-import { womenLevelTwo } from "./levelTwo/womenLevelTwo";
-import { electronicsLevelTwo } from "./levelTwo/electronicsLevelTwo";
-import { furnitureLevelTwo } from "./levelTwo/furnitureLevelTwo";
+import { menLevelTwo } from "./leveltwo/menLevelTwo";
+import { womenLevelTwo } from "./leveltwo/womenLevelTwo";
+import { electronicsLevelTwo } from "./leveltwo/electronicsLevelTwo";
+import { furnitureLevelTwo } from "./leveltwo/furnitureLevelTwo";
 
 export const mainCategory = [
   {
