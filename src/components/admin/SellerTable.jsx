@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { updateSellerStatus } from "../../redux/adminSeller/adminSellerThunk";
+import { updateSellerStatus } from "../../redux/adminseller/adminSellerThunk";
 
 const SellerTable = ({ sellers = [] }) => {
   const dispatch = useDispatch();
