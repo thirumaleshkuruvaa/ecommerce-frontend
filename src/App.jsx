@@ -67,11 +67,6 @@ import {
   NotFound,
 } from "./components/Footer/FooterPages";
 
-/* =========================
-   STYLES
-========================= */
-import "./css/seller.css";
-
 function App() {
   const location = useLocation();
 

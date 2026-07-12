@@ -5,7 +5,7 @@ import {
   fetchSellerProducts,
   updateProduct,
   deleteProduct,
-} from "./sellerProductThunk";
+} from "./SellerProductThunk";
 
 const initialState = {
   products: [],

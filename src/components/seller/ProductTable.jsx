@@ -5,7 +5,7 @@ import {
   fetchSellerProducts,
   deleteProduct,
   updateProduct,
-} from "../../redux/sellerProducts/SellerProductThunk.jsx";
+} from "../../redux/sellerProducts/SellerProductThunk";
 
 const ProductTable = () => {
   const dispatch = useDispatch();
