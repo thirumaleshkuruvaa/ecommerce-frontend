@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 
 import { uploadToCloudinary } from "../../utils/uploadToCloundinary";
-import { createProduct } from "../../redux/sellerProducts/sellerProductThunk";
+import { createProduct } from "../../redux/sellerProducts/SellerProductThunk";
 
 const AddProductForm = () => {
   const dispatch = useDispatch();

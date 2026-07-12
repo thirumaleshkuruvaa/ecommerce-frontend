@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import SellerTable from "../../components/admin/SellerTable";
-import { fetchAllSellers } from "../../redux/adminSeller/adminSellerThunk";
+import { fetchAllSellers } from "../../redux/adminseller/adminSellerThunk";
 
 const Sellers = () => {
   const dispatch = useDispatch();

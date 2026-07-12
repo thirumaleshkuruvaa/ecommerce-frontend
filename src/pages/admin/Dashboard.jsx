@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchAllSellers } from "../../redux/adminSeller/adminSellerThunk";
+import { fetchAllSellers } from "../../redux/adminseller/adminSellerThunk";
 import SellerTable from "../../components/admin/SellerTable";
 
 const Dashboard = () => {

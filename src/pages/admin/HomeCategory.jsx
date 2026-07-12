@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import HomeCategoryTable from "../../components/admin/HomeCategoryTable";
-import CreateHomeCategoryForm from "../../components/admin/CreateHomeCategoryForm";
+import CreateHomeCategoryForm from "../../components/admin/createHomeCategoryForm";
 import { getAllHomeCategories } from "../../redux/adminhomecategory/adminHomeCategoryThunk";
 
 const HomeCategory = () => {
