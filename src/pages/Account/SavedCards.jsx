@@ -5,9 +5,9 @@ import {
   fetchSavedCards,
   addSavedCard,
   deleteSavedCard,
-} from "../../redux/savedCard/savedCardThunk";
+} from "../../redux/savedcard/savedCardThunk";
 
-import { clearSavedCardMessage } from "../../redux/savedCard/savedCardSlice";
+import { clearSavedCardMessage } from "../../redux/savedcard/savedCardSlice";
 
 const SavedCards = () => {
   const dispatch = useDispatch();

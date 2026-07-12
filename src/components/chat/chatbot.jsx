@@ -5,9 +5,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { sendChatMessage } from "../../redux/chat/chatThunk";
 import { addUserMessage } from "../../redux/chat/chatSlice";
 
-import ChatHeader from "./ChatHeader";
-import ChatInput from "./ChatInput";
-import ChatMessage from "./ChatMessage";
+import ChatHeader from "./chatHeader";
+import ChatInput from "./chatInput";
+import ChatMessage from "./chatMessage";
 import TypingLoader from "./TypingLoader";
 import WelcomeMessage from "./WelcomeMessege";
 
